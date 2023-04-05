@@ -13,9 +13,9 @@ table.table {
   width: 600px;
 }
 table.table tbody td {
-  font-size: 12px;
+  font-size: 14px;
 }
-table.table td:nth-child(even) {
+table.table td:nth-child(3) {
   background: #ebebeb;
   text-align: center;
   width: 90px;
@@ -31,4 +31,7 @@ table.table thead th {
 }
 table.table thead th:first-child {
   border-left: none;
+}
+table.table td img {
+  width: 26px;
 }
