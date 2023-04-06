@@ -5,12 +5,7 @@ const builds = [
     count: Math.floor(Math.random() * 1000)
   },
   {
-    name: 'Cold DoT Elementalist',
-    iconURL: 'https://www.poewiki.net/images/3/30/Vortex_inventory_icon.png',
-    count: Math.floor(Math.random() * 1000)
-  },
-  {
-    name: 'Poison Blade Vortex Occultist',
+    name: 'Blade Vortex Cold Elementalist',
     iconURL: 'https://www.poewiki.net/images/4/49/Blade_Vortex_inventory_icon.png',
     count: Math.floor(Math.random() * 1000)
   },
