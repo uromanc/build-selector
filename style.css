@@ -10,18 +10,18 @@ body {
 }
 table.table {
   text-align: left;
-  width: 600px;
+  width: 720px;
 }
 table.table tbody td {
   font-size: 14px;
 }
-table.table td:nth-child(3) {
-  background: #ebebeb;
+table.table td:nth-child(4) {
   text-align: center;
   width: 90px;
 }
 table.table thead {
   background: #FFFFFF;
+  text-align: center;
 }
 table.table thead th {
   font-size: 16px;

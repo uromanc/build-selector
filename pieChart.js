@@ -2,16 +2,16 @@ import Chart from 'chart.js/auto'
 import builds from './builds'
 const buildPieChart = () => {
   const buildNames = builds.map(build => build.name)
+  //const buildAscandancy = builds.map(build => build.ascendancy)
   const buildValues = builds.map(build => build.count)
+  const  buildColors = builds.map(build => build.color)
   new Chart('buildsChart', {
     type: 'pie',
     data: {
       labels: buildNames,
       datasets: [{
         data: buildValues,
-        backgroundColor: [
-          '#2CB042', '#2077A0', '#4F6D5C', '#773CB6', '#A0B63C'
-        ]
+        backgroundColor: buildColors
       }],
       hoverOffset: 4
     },
@@ -32,7 +32,7 @@ const buildPieChart = () => {
         },
         title: {
           display: true,
-          text: 'Starter builds for the next 3.21 Crucible League',
+          text: 'Starter builds for the next 3.22 Ancestors League',
           font: {
             size: 24
           }
