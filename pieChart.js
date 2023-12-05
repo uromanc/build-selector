@@ -32,7 +32,7 @@ const buildPieChart = () => {
         },
         title: {
           display: true,
-          text: 'Starter builds for the next 3.22 Ancestors League',
+          text: 'Starter builds for the next 3.23 Affliction League',
           font: {
             size: 24
           }

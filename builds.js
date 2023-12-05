@@ -1,45 +1,67 @@
 const builds = [
   {
-    name: 'Impending Doom Poison',
-    ascendancy: 'Occultist',
-    iconURL: 'https://www.poewiki.net/images/a/a3/Impending_Doom_Support_inventory_icon.png',
-    count: Math.floor(Math.random() * 1000),
-    color: '#3393FF'
-  },
-  {
-    name: 'Blade Vortex Poison',
+    name: 'Poison Blade Vortex',
+    character: 'Ranger',
     ascendancy: 'Pathfinder',
     iconURL: 'https://www.poewiki.net/images/4/49/Blade_Vortex_inventory_icon.png',
     count: Math.floor(Math.random() * 1000),
-    color: '#4CFF33'
+    color: '#0f572a'
   },
   {
-    name: 'Cold DoT',
+    name: 'Toxic Rain',
+    character: 'Ranger',
+    ascendancy: 'Pathfinder',
+    iconURL: 'https://www.poewiki.net/images/b/bb/Toxic_Rain_inventory_icon.png',
+    count: Math.floor(Math.random() * 1000),
+    color: '#85c24f'
+  },
+  {
+    name: 'Detonate Dead',
+    character: 'Witch',
     ascendancy: 'Elementalist',
-    iconURL: 'https://www.poewiki.net/images/3/30/Vortex_inventory_icon.png',
+    iconURL: 'https://www.poewiki.net/images/3/31/Detonate_Dead_inventory_icon.png',
     count: Math.floor(Math.random() * 1000),
-    color: '#33E0FF'
+    color: '#611010'
   },
   {
-    name: 'Lightning Arrow',
-    ascendancy: 'Deadeye',
-    iconURL: 'https://www.poewiki.net/images/9/9e/Lightning_Arrow_inventory_icon.png',
+    name: 'Explosive Arrow',
+    character: 'Witch',
+    ascendancy: 'Elementalist',
+    iconURL: 'https://www.poewiki.net/images/b/b6/Explosive_Arrow_inventory_icon.png',
     count: Math.floor(Math.random() * 1000),
-    color: '#C971E8'
+    color: '#b54e0e'
   },
   {
-    name: 'Frost Blades',
-    ascendancy: 'Trickster',
-    iconURL: 'https://www.poewiki.net/images/0/06/Frost_Blades_inventory_icon.png',
+    name: 'Summon Raging Spirit',
+    character: 'Templar',
+    ascendancy: 'Guardian',
+    iconURL: 'https://www.poewiki.net/images/0/0a/Summon_Raging_Spirit_inventory_icon.png',
     count: Math.floor(Math.random() * 1000),
-    color: '#71E8B0'
+    color: '#b5201b'
   },
+  /* {
+    name: 'Bleed Bow',
+    character: 'Duelist',
+    ascendancy: 'Gladiator',
+    iconURL: 'https://www.poewiki.net/images/f/fc/Split_Arrow_inventory_icon.png',
+    count: Math.floor(Math.random() * 1000),
+    color: '#91c41a'
+  }, */
   {
-    name: 'Boneshatter ',
+    name: 'Boneshatter',
+    character: 'Marauder',
     ascendancy: 'Juggernaut',
     iconURL: 'https://www.poewiki.net/images/1/15/Boneshatter_inventory_icon.png',
     count: Math.floor(Math.random() * 1000),
-    color: '#D5A030'
-  }
+    color: '#d6a549'
+  },
+  /* {
+    name: 'Hexblast Mines',
+    character: 'Shadow',
+    ascendancy: 'Saboteur',
+    iconURL: 'https://www.poewiki.net/images/b/bf/Hexblast_inventory_icon.png',
+    count: Math.floor(Math.random() * 1000),
+    color: '#8b49d6'
+  } */
 ]
 export default builds
