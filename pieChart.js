@@ -4,7 +4,7 @@ const buildPieChart = () => {
   const buildNames = builds.map(build => build.name)
   //const buildAscandancy = builds.map(build => build.ascendancy)
   const buildValues = builds.map(build => build.count)
-  const  buildColors = builds.map(build => build.color)
+  const buildColors = builds.map(build => build.color)
   new Chart('buildsChart', {
     type: 'pie',
     data: {
@@ -32,9 +32,9 @@ const buildPieChart = () => {
         },
         title: {
           display: true,
-          text: 'Starter builds for the next 3.23 Affliction League',
+          text: 'Starter Builds for PoE 3.24 Necropolis League',
           font: {
-            size: 24
+            size: 26
           }
         }
       },
