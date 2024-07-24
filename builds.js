@@ -1,59 +1,63 @@
+const total = 10000;
+let numbers = [];
+
+// Generar 4 números aleatorios entre 1 y el total menos 1
+for (let i = 0; i < 4; i++) {
+  numbers.push(Math.floor(Math.random() * (total - 4)) + 1);
+}
+
+// Añadir el total y ordenar los números para evitar valores negativos
+numbers.push(0, total);
+numbers.sort((a, b) => a - b);
+
+// Calcular las diferencias
+let results = [];
+for (let i = 1; i < numbers.length; i++) {
+  results.push(numbers[i] - numbers[i - 1]);
+}
+
+// Remover el primer y último número que fueron añadidos para control
+results.shift();
+results.pop();
+
+// Añadir el último valor que hace la suma 10000
+results.push(total - results.reduce((a, b) => a + b, 0));
 const builds = [
+  //1
   {
-    name: 'Detonate Dead',
-    character: 'Witch',
-    ascendancy: 'Elementalist',
-    iconURL: 'https://www.poewiki.net/images/3/31/Detonate_Dead_inventory_icon.png',
-    count: Math.floor(Math.random() * 1000),
-    color: '#611010'
+    name: `Archmage Ball Lightning of Orbiting/Ice Nova of Frostbolts`,
+    character: `Templar`,
+    ascendancy: `Hierophant`,
+    iconURL: `https://www.poewiki.net/images/c/ca/Ball_Lightning_of_Orbiting_inventory_icon.png`,
+    count: results[0],
+    color: `#8CC8EC`,
   },
+  //2
   {
-    name: 'Hexblast Mines',
-    character: 'Shadow',
-    ascendancy: 'Saboteur',
-    iconURL: 'https://www.poewiki.net/images/b/bf/Hexblast_inventory_icon.png',
-    count: Math.floor(Math.random() * 1000),
-    color: '#8b49d6'
+    name: `Hexblast Mines`,
+    character: `Shadow`,
+    ascendancy: `Trickster`,
+    iconURL: `https://www.poewiki.net/images/b/bf/Hexblast_inventory_icon.png`,
+    count: results[1],
+    color: `#715FD6`
   },
+  //3
   {
-    name: 'Exsanguinate Mines',
-    character: 'Trickster',
-    ascendancy: 'Shadow',
-    iconURL: 'https://www.poewiki.net/images/8/86/Exsanguinate_inventory_icon.png',
-    count: Math.floor(Math.random() * 1000),
-    color: '#E48282'
+    name: `Elemental Hit of the Spectrum`,
+    character: `Ranger`,
+    ascendancy: `Deadeye`,
+    iconURL: `https://www.poewiki.net/images/b/b4/Elemental_Hit_of_the_Spectrum_inventory_icon.png`,
+    count: results[2],
+    color: `#B6D65F`
   },
+  //4
   {
-    name: 'Poison Blade Vortex',
-    character: 'Ranger',
-    ascendancy: 'Pathfinder',
-    iconURL: 'https://www.poewiki.net/images/4/49/Blade_Vortex_inventory_icon.png',
-    count: Math.floor(Math.random() * 1000),
-    color: '#0f572a'
-  },
-  {
-    name: 'Explosive Arrow',
-    character: 'Witch',
-    ascendancy: 'Elementalist',
-    iconURL: 'https://www.poewiki.net/images/b/b6/Explosive_Arrow_inventory_icon.png',
-    count: Math.floor(Math.random() * 1000),
-    color: '#b54e0e'
-  },
-  {
-    name: 'Bleed Bow',
-    character: 'Duelist',
-    ascendancy: 'Gladiator',
-    iconURL: 'https://www.poewiki.net/images/c/cc/Puncture_inventory_icon.png',
-    count: Math.floor(Math.random() * 1000),
-    color: '#91c41a'
-  },
-  {
-    name: 'Ice Shot',
-    character: 'Ranger',
-    ascendancy: 'Deadeye',
-    iconURL: 'https://www.poewiki.net/images/0/08/Ice_Shot_inventory_icon.png',
-    count: Math.floor(Math.random() * 1000),
-    color: '#A9DEDD'
+    name: `Toxic Rain Selfcast/Ballista`,
+    character: `Ranger`,
+    ascendancy: `Pathfinder`,
+    iconURL: `https://www.poewiki.net/images/b/bb/Toxic_Rain_inventory_icon.png`,
+    count: results[3],
+    color: `#3D7F44`
   }
 ]
 export default builds

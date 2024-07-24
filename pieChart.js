@@ -26,15 +26,15 @@ const buildPieChart = () => {
           display: true,
           labels: {
             font: {
-              size: 10
+              size: 14
             }
           }
         },
         title: {
           display: true,
-          text: 'Starter Builds for PoE 3.24 Necropolis League',
+          text: 'Starter Builds for the upcoming Path of Exile 3.25 Settlers of Kalguur League',
           font: {
-            size: 26
+            size: 32
           }
         }
       },
