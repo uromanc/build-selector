@@ -32,7 +32,7 @@ const buildPieChart = () => {
         },
         title: {
           display: true,
-          text: 'Starter Builds for the upcoming Path of Exile 3.25 Settlers of Kalguur League',
+          text: 'Starter Builds for the upcoming relaunch Path of Exile 3.25 Settlers of Kalguur League',
           font: {
             size: 32
           }
